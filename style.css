@@ -1,0 +1,365 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #030b3af2;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    /* display:inline-block; */
+  }
+
+  header h1::after {
+    content: '\2022'; 
+    color: #ffccbc;
+    margin-left: 10px;
+  }
+
+  header h1:hover::after {
+    color: #ff5722; 
+  }
+
+header img {
+    position: absolute;
+    top: 24px;
+    
+    left: 10px;
+    
+    max-height: 94px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.search-bar {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    background-color: #f38721;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #1565c0;
+}
+
+nav {
+    background-color: #5bc0d6;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: #090909;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #ff8a65;
+}
+.about-us {
+    background-color: #ffcc80;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-container {
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      background-image:url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   
+ }
+
+  
+
+  
+
+.menu-item {
+    border: 2px solid #ffccbc;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff8e1;
+    width: calc(33.33% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-item h3 {
+    color: #000000;
+    background-color: rgb(155, 223, 220);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    display: inline-block;
+  }
+
+.menu-item p {
+    color: #000000;
+  }
+
+.menu-item button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-item button:hover {
+    background-color: #45a049;
+}
+
+.menu-item-1 {
+    background-image: url('classicburger.jpg');
+    background-size: cover;
+    /* filter: blur(2px); */
+    background-blend-mode:darken;
+    position: relative;
+    opacity: 1.2;
+    
+    
+  }
+  
+ .menu-item-2 {
+    background-image: url('pizzaa.jpg');
+    background-size: cover;
+    background-blend-mode:darken;
+    position: relative;
+    opacity: 1.2;
+}
+
+.menu-item-3 {
+    background-image: url('salad.jpg');
+    background-size: cover;
+    position: relative;
+    opacity: 1.2;
+}
+
+.menu-item-4 {
+    background-image: url('spagetti.jpg');
+    background-size: cover;
+    position: relative;
+    opacity: 1.2;
+}
+.menu-item-5 {
+    background-image: url('veggie.jpg');
+    background-size: cover;
+    position: relative;
+    opacity: 1.2;
+}
+
+.menu-item-6 {
+    background-image: url('bbqchicken.jpg');
+    background-size: cover;
+    position: relative;
+    opacity: 1.2;
+}
+
+.menu-item-7 {
+    background-image: url('spaghettimeat.jpg');
+    background-size: cover;
+    position: relative;
+    opacity: 1.2;
+}
+
+.menu-item-8 {
+    background-image: url('sizzler.jpg');
+    background-size: cover;
+    position: relative;
+    opacity: 1.2;
+}
+
+.order-summary {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form button {
+    background-color: #f39821;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+.contact-form button:hover {
+    background-color: #1565c0;
+  }
+
+.special-offers {
+    background-color: #ffcc80;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .special-offers h2 {
+    margin-bottom: 10px;
+  }
+
+.special-offers p {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+      
+.special-offers .free-dessert {
+    color: #e65100;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* .testimonial-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-container h2 {
+    color: #333;
+} */
+
+.testimonial-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+.testimonial-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.testimonial {
+    margin-top: 20px;
+    text-align: left;
+    padding: 15px;
+    border-left: 3px solid #ff5722; /* Highlight color */
+}
+  
+.testimonial p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+  
+.testimonial p::before {
+    content: '“';
+    font-size: 24px;
+    color: #ff5722; /* Highlight color */
+    margin-right: 5px;
+}
+  
+.testimonial p::after {
+    content: '”';
+    font-size: 24px;
+    color: #ff5722; /* Highlight color */
+    margin-left: 5px;
+}
+  
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .menu-item{
+        width: 100%;
+    }
+}
